@@ -38,4 +38,11 @@ git submodule add --force git@github.com:NetWorkedData/NetWorketData.git
 cd ~/Desktop/NetWorkedData_Installation/Assets
 git submodule add git@github.com:NetWorkedData/NetWorkedData_Database.git
 
+# checkout submodule other awesome packages
+cd ~/Desktop/NetWorkedData_Installation/Assets
+git submodule add git@github.com:idemobi/SceneTransitionSystem.git
+
+cd ~/Desktop/NetWorkedData_Installation/Assets
+git submodule add git@github.com:idemobi/DoxygenGeneratorWindow.git
+
 echo 'Enjoy'
