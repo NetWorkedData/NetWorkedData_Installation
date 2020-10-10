@@ -15,6 +15,7 @@ cd NetWorkedData_Installation
 # create new branch 
 git checkout Unity_2019
 git checkout -b Unity_2019_Test Unity_2019
+git switch Unity_2019_Test
 
 # add extension to ignore
 echo '' >> .gitignore
@@ -25,20 +26,16 @@ echo '*/Assets/NetWorkedData_Private/*' >> .gitignore
 echo '*/Assets/NetWorkedData_Compile/*' >> .gitignore
 git add --all
 git commit -m "[ADD] Ignore"
+git switch Unity_2019_Test
 
 # checkout submodule NetWorkedData engine
 # use git from GitHub
 cd ~/Desktop/NetWorkedData_Installation/Assets
 git submodule add --force git@github.com:NetWorkedData/NetWorketData.git
-cd NetWorkedData
-git checkout master
 
 # checkout submodule NetWorkedData database engine
 # use git from GitHub
 cd ~/Desktop/NetWorkedData_Installation/Assets
 git submodule add git@github.com:NetWorkedData/NetWorkedData_Database.git
-cd NetWorkedData_Database
-#git checkout SQLCipher_4-4-0_Cluster
-git checkout master
 
 echo 'Enjoy'
