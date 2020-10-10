@@ -8,7 +8,7 @@ This project test installation success after all update of repositories
 cd <your_project>
 ```
 
-- add extensions and folders to ignore
+- add extensions and folders to .gitignore
 
 ```shell
 echo '' >> .gitignore
@@ -18,7 +18,7 @@ echo '*/*.prp' >> .gitignore
 echo '*/Assets/NetWorkedData_Private/*' >> .gitignore
 echo '*/Assets/NetWorkedData_Compile/*' >> .gitignore
 git add --all
-git commit -m "[ADD] extensions and folders in .gitignore"
+git commit -m "[ADD] extensions and folders to .gitignore"
 ```
 
 - checkout submodule NetWorkedData
