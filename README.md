@@ -2,13 +2,13 @@
 
 This project test installation success after all update of repositories
 
--  Go to your unity project's directory
+-  go to your unity project's directory
 
 ```shell
 cd <your_project>
 ```
 
-- add extension to ignore
+- add extensions and folders to ignore
 
 ```shell
 echo '' >> .gitignore
@@ -21,14 +21,14 @@ git add --all
 git commit -m "[ADD] extensions and folders in .gitignore"
 ```
 
-- checkout submodule NetWorkedData engine
+- checkout submodule NetWorkedData
 
 ```shell
 cd <your_project_path>/Assets
 git submodule add --force git@github.com:NetWorkedData/NetWorketData.git
 ```
 
-- checkout submodule NetWorkedData database engine
+- checkout submodule NetWorkedData database
 
 ```shell
 cd <your_project_path>/Assets
